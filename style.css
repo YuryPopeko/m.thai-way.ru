@@ -693,6 +693,7 @@ div.modal {
 
 div.modal input[type=text],
 div.modal input[type=tel] {
+	-webkit-appearance: none;
 	width: 100%;
     margin-top: 2vw;
     margin-bottom: 3vw;
@@ -714,6 +715,7 @@ div.modal p {
 }
 
 div.modal input[type=submit] {
+	-webkit-appearance: none;
 	display: block;
 	width: 60vw;
 	margin-top: 7vw;
