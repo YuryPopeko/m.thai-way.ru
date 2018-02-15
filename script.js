@@ -1,4 +1,4 @@
-document.querySelector('button.menu').addEventListener('click', function() {	// MENU, MODAL
+document.querySelector('button.menu').addEventListener('click', function() {		// MENU
 	document.body.classList.add('menu');
 });
 
@@ -25,7 +25,26 @@ document.querySelector('.menu ul ul button').addEventListener('click', function(
 
 
 
-const par = new google.maps.LatLng(59.843041, 30.3200435),						// MAP
+document.querySelector('button.modal').addEventListener('click', function(event) {	// MODAL
+	document.body.classList.add('modal');
+});
+
+document.querySelector('.modal .close').addEventListener('click', function() {
+	document.body.classList.remove('modal');
+});
+
+document.querySelector('div.dark').addEventListener('click', function() {
+	document.body.classList.remove('modal');
+});
+
+document.addEventListener('keydown', function(event) {
+	document.body.classList.remove('modal');
+});
+
+
+
+
+const par = new google.maps.LatLng(59.843041, 30.3200435),							// MAP
 	  isspa = new google.maps.LatLng(59.842766, 30.3162032),
 	  luxury = new google.maps.LatLng(59.9671712, 30.2711788);
 
