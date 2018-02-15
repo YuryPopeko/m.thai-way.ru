@@ -114,7 +114,7 @@ button.menu span::after {
 	transform: translateY(.7vw);
 }
 
-.menu .close {
+button.close {
 	padding-right: 0;
 	padding-left: 0;
 	border: 0;
@@ -124,7 +124,7 @@ button.menu span::after {
 	right: 5vw;
 }
 
-.menu .close::after {
+button.close::after {
 	content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 610.79" fill="#e6e6e6"><polygon points="612 35.4 576.52 0 306 270 35.48 0 0 35.4 270.52 305.41 0 575.39 35.48 610.79 306 340.81 576.52 610.79 612 575.39 341.46 305.41 612 35.4"/></svg>');
 	display: block;
 	width: 5vw;
@@ -687,6 +687,7 @@ a.vk {
 #map {
 	width: 100%;
 	height: 67.1875vw;
+	position: relative;
 }
 
 footer {
