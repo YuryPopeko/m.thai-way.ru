@@ -45,65 +45,44 @@ document.addEventListener('keydown', function(event) {
 
 
 function initMap() {
-	var uluru = {lat: -25.363, lng: 131.044};
+	var par = {lat: 59.843041, lng: 30.3200435},
+		isspa = {lat: 59.842766, lng: 30.3162032},
+		luxury = {lat: 59.9671712, lng: 30.2711788};
+
 	var map = new google.maps.Map(document.getElementById('map'), {
-	  zoom: 4,
-	  center: uluru
+		zoom: 15,
+		center: par
 	});
+
 	var marker = new google.maps.Marker({
-	  position: uluru,
-	  map: map
+		position: par,
+		map: map
+	});
+
+	document.getElementById('par').addEventListener('change', function() {
+		if (this.checked) map.setCenter(par);
+		marker.setMap(null);
+		marker = new google.maps.Marker({
+			position: par,
+			map: map,
+		});
+	});
+
+	document.getElementById('isspa').addEventListener('change', function() {
+		if (this.checked) map.setCenter(isspa);
+		marker.setMap(null);
+		marker = new google.maps.Marker({
+			position: isspa,
+			map: map,
+		});
+	});
+
+	document.getElementById('luxury').addEventListener('change', function() {
+		if (this.checked) map.setCenter(luxury);
+		marker.setMap(null);
+		marker = new google.maps.Marker({
+			position: luxury,
+			map: map,
+		});
 	});
 }
-
-
-
-// function initMap() {
-// 	const par = new google.maps.LatLng(59.843041, 30.3200435),
-// 		  isspa = new google.maps.LatLng(59.842766, 30.3162032),
-// 		  luxury = new google.maps.LatLng(59.9671712, 30.2711788);
-
-// 	const options = {
-// 		zoom: 15,
-// 		center: par,
-// 		mapTypeId: google.maps.MapTypeId.ROADMAP
-// 	}
-
-// 	const map = new google.maps.Map(document.getElementById('map'), options);
-
-// 	let marker = new google.maps.Marker({
-// 		position: par,
-// 		map: map,
-// 		title: 'par4par' 
-// 	});
-
-// 	document.getElementById('par').addEventListener('change', function() {
-// 		if (this.checked) map.setCenter(par);
-// 		marker.setMap(null);
-// 		marker = new google.maps.Marker({
-// 			position: par,
-// 			map: map,
-// 			title: 'par4par'
-// 		});
-// 	});
-
-// 	document.getElementById('isspa').addEventListener('change', function() {
-// 		if (this.checked) map.setCenter(isspa);
-// 		marker.setMap(null);
-// 		marker = new google.maps.Marker({
-// 			position: isspa,
-// 			map: map,
-// 			title: 'isspa'
-// 		});
-// 	});
-
-// 	document.getElementById('luxury').addEventListener('change', function() {
-// 		if (this.checked) map.setCenter(luxury);
-// 		marker.setMap(null);
-// 		marker = new google.maps.Marker({
-// 			position: luxury,
-// 			map: map,
-// 			title: 'luxury'
-// 		});
-// 	});
-// }
