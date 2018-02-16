@@ -34,7 +34,7 @@ function closeMenu() {
 
 
 
-document.querySelector('section.contacts').addEventListener('click', function(event) {
+document.querySelector('section.salons').addEventListener('click', function(event) {
 	if (event.target.classList.contains('modal'))
 		document.body.classList.add('modal');
 });

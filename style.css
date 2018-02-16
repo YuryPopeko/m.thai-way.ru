@@ -317,7 +317,7 @@ main > img {
 	margin-bottom: 2vw;
 }
 
-h1 {
+main.main h1 {
 	font-size: 5vw;
 	line-height: 5vw;
 	font-family: lato bold;
@@ -353,8 +353,16 @@ ul {
 }
 
 ul.tabs {
-	margin-top: 6.25vw;
 	margin-bottom: 0;
+}
+
+main.main ul.tabs {
+	margin-top: 6.25vw;
+}
+
+.salon.tabs {
+	position: sticky;
+    top: -.3125vw;
 }
 
 .description.tabs {
@@ -364,9 +372,12 @@ ul.tabs {
 .tabs li {
 	float: left;
 	text-align: center;
+	font-family: lato regular;
+}
+
+main.main .tabs li {
 	font-size: 3.4375vw;
 	line-height: 3.75vw;
-	font-family: lato regular;
 }
 
 .description li {
@@ -469,7 +480,7 @@ div.description {
 	font-family: lato regular;
 }
 
-.service {
+main.main .service {
 	display: block;
 	height: 56.25vw;
 	text-decoration: none;
@@ -477,7 +488,7 @@ div.description {
 	overflow: hidden;
 }
 
-.service img {
+main.main .service img {
 	width: 100%;
 	position: absolute;
 	top: 50%;
@@ -485,7 +496,7 @@ div.description {
 	transform: translate(-50%, -50%);
 }
 
-.service::after {
+main.main .service::after {
 	content: '';
 	display: block;
 	width: 100%;
@@ -496,7 +507,7 @@ div.description {
 	background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
 }
 
-.service p {
+main.main .service p {
 	font-size: 4.375vw;
 	line-height: 9.375vw;
 	font-family: lato black;
@@ -508,7 +519,7 @@ div.description {
 	z-index: 1;
 }
 
-h2 {
+main.main h2 {
 	font-size: 5vw;
 	line-height: 6.25vw;
 	font-family: ptsans bold;
@@ -516,7 +527,7 @@ h2 {
 	margin-bottom: 6.25vw;
 }
 
-h2 + span {
+.salons span {
 	font-size: 5vw;
 	line-height: 6.25vw;
 	font-family: lato regular;
@@ -751,4 +762,246 @@ footer a {
 	font-size: 4.375vw;
 	font-family: lato regular;
 	color: rgb(255, 255, 255);
+}
+
+main.service .head {
+	width: 100%;
+	height: 56.25vw;
+	overflow: hidden;
+	position: relative;
+}
+
+main.service .head * {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+main.service h1 {
+	font-size: 3.75vw;
+	line-height: 5.5vw;
+	font-family: lato black;
+	text-transform: uppercase;
+	color: rgb(246, 246, 246);
+	text-align: center;
+	text-shadow: 0 0 2vw rgb(0, 0, 0);
+}
+
+.breadcrumbs {
+    background-color: rgb(246, 246, 246);
+    font-size: 3.75vw;
+    line-height: 12.5vw;
+    font-family: lato regular;
+}
+
+.breadcrumbs .wrapper * {
+	color: rgb(86, 86, 86);
+}
+
+.effect {
+	display: none;
+	margin-top: 9.38;
+	margin-bottom: 13.57vw;
+}
+
+.positive-negative .tabs > li {
+	width: 50%;
+}
+
+.positive-negative label {
+	font-size: 3.75vw;
+	line-height: 14vw;
+	font-family: lato black;
+	color: rgb(174, 174, 174);
+}
+
+#positive:checked ~ ul label[for=positive] {
+	color: rgb(70, 160, 49);
+	border-bottom: 1.25vw solid rgb(70, 160, 49);
+}
+
+#negative:checked ~ ul label[for=negative] {
+	color: rgb(193, 45, 0);
+	border-bottom: 1.25vw solid rgb(193, 45, 0);
+}
+
+#positive:checked ~ .positive,
+#negative:checked ~ .negative {
+	display: block;
+}
+
+.effect li {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+
+.effect div {
+	width: 13.75vw;
+    height: 13.75vw;
+    margin-right: auto;
+    margin-bottom: 2vw;
+    margin-left: auto;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 58% 60%;
+}
+
+.positive.effect div {
+	background-color: rgb(70, 160, 49);
+}
+
+.negative.effect div {
+	background-color: rgb(193, 45, 0);
+}
+
+.effect span {
+	font-size: 3.75vw;
+	font-family: lato regular;
+}
+
+.positive.effect li:first-child div {
+	background-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 290.6 257.8" fill="#fff"><path d="M235.3,151.9a4,4,0,0,1-3.9-3.2L219.6,93.6l-20.4,65a4.12,4.12,0,0,1-4.2,2.8,4,4,0,0,1-3.6-3.5L179.6,71.1,161.8,218.7a3.91,3.91,0,0,1-3.9,3.5h0a4.08,4.08,0,0,1-4-3.5L139.1,103.4l-14.7,67.7a3.94,3.94,0,0,1-3.8,3.1,4.08,4.08,0,0,1-4-3.1L93.8,74.3,77.4,147.9a4,4,0,0,1-3.9,3.1H38c11.1,11.8,24.7,23.9,40.9,36.6,35.2,27.5,56.3,55.2,66.3,70.2,10.1-15,31.2-42.7,66.4-70.2a380.53,380.53,0,0,0,40.1-35.7H235.3Z"/><path d="M70.3,143,89.8,55.8a4,4,0,0,1,3.9-3.1,3.89,3.89,0,0,1,3.9,3.1l22.7,96.5,16-73.1a4,4,0,0,1,4.1-3.2,4.15,4.15,0,0,1,3.8,3.5l13.7,106.4L175.5,39.2a4,4,0,0,1,3.9-3.5h0a4.08,4.08,0,0,1,4,3.5l13.6,100,19.6-62.4a4.08,4.08,0,0,1,4-2.8,4,4,0,0,1,3.7,3.2L238.6,144h20.5c21.3-24.5,31.5-47.5,31.5-70.3,0-54.3-35-73.6-65.1-73.6C197.6.1,171.1,15.4,154.8,41l-.2.2-.2.2a11.53,11.53,0,0,1-8.7,4.5H145a11.77,11.77,0,0,1-8.7-4.4l-.3-.3-.2-.3C119.5,15.3,93,0,65.1,0,35.1,0,0,19.3,0,73.6,0,96.1,10,118.8,30.8,143H70.3Z"/></svg>');
+}
+
+.positive.effect li:nth-child(2) div {
+	background-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.82 63.91" fill="#fff"><path d="M15.18,19.9H4.55A4.55,4.55,0,0,0,0,24.45V63.91H19.73V24.45A4.56,4.56,0,0,0,15.18,19.9Z"/><path class="cls-1" d="M10.37,17.06a4.84,4.84,0,0,0,4.33-4.88h0S15,8.67,8.55,0c1.87,4.33-1.33,6.79-2.86,9.74a.39.39,0,0,0-.08.15c-.08.15-.16.31-.24.48a4.09,4.09,0,0,0-.18.48l0,.15A4.69,4.69,0,0,0,5,12.74,4.85,4.85,0,0,0,10.37,17.06Z"/><path d="M50.65,21A29.13,29.13,0,0,1,37.5,28.5c-3.08.7-11.56,3.66-14.27,10.87-4.47,15.1,2.6,24.54,2.6,24.54-4.68-17,2.89-20.55,8.23-23.56.93-.51,1.75-1,2.52-1.46L36.5,39c-10,7.07-9.9,11.08-10,13.92,0,2,.68,2,1.58,1.49.44-.17,8.74-3.45,11.57-5.22h0a23,23,0,0,0,5.24-3.8C52.36,37.73,50.65,21,50.65,21Z"/></svg>');
+}
+
+.positive.effect li:last-child div {
+	background-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.9 40.52" fill="#fff"><path d="M14.49,0A3.5,3.5,0,1,0,18,3.5,3.5,3.5,0,0,0,14.49,0Zm0,8a4.5,4.5,0,0,0-3.84,2.16L7.4,13,1.52,13a1.5,1.5,0,0,0,0,3h0L8,16a1.5,1.5,0,0,0,1-.37l1.28-1.09L11,23.63V39a1.5,1.5,0,0,0,3,0s0,0,0,0V24h1V39a1.5,1.5,0,0,0,3,0s0,0,0,0V24h0l.75-9.12.66.66a1.5,1.5,0,0,0,1.06.47l6.91,0a1.5,1.5,0,1,0,.06-3h0l-6.28,0L18.3,10.13A4.46,4.46,0,0,0,14.49,8Z"/></svg>');
+}
+
+.negative.effect li:first-child div {
+	background-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.66 45.66" fill="#fff"><path d="M18.62,27.31V7.78a7.79,7.79,0,0,0-15.57,0V27.31A10.72,10.72,0,0,0,0,34.83a10.83,10.83,0,0,0,21.66,0A10.72,10.72,0,0,0,18.62,27.31ZM10.83,42.66A7.83,7.83,0,0,1,3,34.83a7.72,7.72,0,0,1,3.08-6.21V16.24H9.45a1,1,0,0,0,0-2H6.08V11.73H9.45a1,1,0,1,0,0-2H6.08v-2a4.76,4.76,0,1,1,9.51,0V28.65a7.66,7.66,0,0,1,3,6.18A7.82,7.82,0,0,1,10.83,42.66Z"/><path d="M13.34,30.46V18.63h-5V30.46A5,5,0,0,0,5.8,34.83a5,5,0,1,0,10.07,0A5,5,0,0,0,13.34,30.46Z"/></svg>');
+}
+
+.negative.effect li:nth-child(2) div {
+	background-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.29 141.92" fill="#fff"><path d="M174.79,63.46H158.35A47.37,47.37,0,0,0,149.87,43l11.65-11.65A7.5,7.5,0,0,0,150.9,20.78L139.26,32.43a47.36,47.36,0,0,0-20.43-8.49V7.5a7.5,7.5,0,0,0-15,0V23.34H78.46V7.5a7.5,7.5,0,0,0-15,0V23.94A47.38,47.38,0,0,0,43,32.43L31.39,20.78A7.5,7.5,0,1,0,20.78,31.39L32.43,43a47.36,47.36,0,0,0-8.49,20.43H7.5a7.5,7.5,0,0,0,0,15H23.94a47.36,47.36,0,0,0,8.49,20.43L20.79,110.53a7.5,7.5,0,1,0,10.61,10.61L43,109.5A47.37,47.37,0,0,0,63.46,118v16.44a7.5,7.5,0,1,0,15,0V118.58h25.37v15.84a7.5,7.5,0,0,0,15,0V118a47.37,47.37,0,0,0,20.43-8.49l11.65,11.64a7.5,7.5,0,1,0,10.61-10.61L149.87,98.89a47.37,47.37,0,0,0,8.49-20.43h16.44a7.5,7.5,0,0,0,0-15Zm-63.46,40.12H71a32.62,32.62,0,1,1,0-65.23h40.37a32.62,32.62,0,1,1,0,65.23Z"/><circle cx="116.99" cy="70.96" r="8.85"/><circle cx="94.3" cy="84.06" r="8.85"/><circle cx="65.3" cy="70.96" r="8.85"/><circle cx="87.99" cy="57.86" r="8.85"/></svg>');
+}
+
+.negative.effect li:last-child div {
+	background-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 966.05 870.9" fill="#fff"><path d="M671.68,378c40.8-43.9,85.8-97.2,119.8-144.3l15.3,15.3a30,30,0,0,0,42.4,0l12.9-12.9a30,30,0,0,0,0-42.4L677.18,8.8a30,30,0,0,0-42.4,0l-12.9,12.9a30,30,0,0,0,0,42.4l15.3,15.3c-41.5,29.9-87.9,68.5-128.3,105.1,8.8,8.4,17.3,16.7,25.5,24.8,7,7,13.9,14.1,20.6,21.2,41-37,88.4-76.2,128.8-104.5l61.1,61.1c-30.1,42.9-72.4,93.7-111.3,136.4Q653.52,350.2,671.68,378Z"/><path d="M113.08,803.7,269,647.8a970.43,970.43,0,0,0,182-86.4q-28.8-19.95-56.6-42a899.2,899.2,0,0,1-86.1,43.2,911.14,911.14,0,0,1,40.6-81.6c-15.1-13.5-29.8-27.5-44.3-41.9l-4.2-4.2a956.22,956.22,0,0,0-77.3,167L67.17,757.7l-3.1-3.1a30,30,0,0,0-42.4,0L8.77,767.5a30,30,0,0,0,0,42.4L60.88,862a30,30,0,0,0,42.4,0l12.9-12.9a30,30,0,0,0,0-42.4Z"/><path d="M944.48,754.6a29.93,29.93,0,0,0-42.4,0l-3.1,3.1L743,601.8a961.33,961.33,0,0,0-89.7-187.4c-2.1-3.4-4.3-6.9-6.5-10.3-11.8-18.5-24.4-36.7-37.6-54.6a1021,1021,0,0,0-80-95.2c-6.4-6.8-13-13.5-19.6-20.2-8.2-8.2-17.1-16.8-26.5-25.7-45.6-43.1-103.4-92.4-154.1-129l15.3-15.3a30,30,0,0,0,0-42.4L331.38,8.8a29.94,29.94,0,0,0-42.4,0L104.08,193.7a30,30,0,0,0,0,42.4L117,249a29.94,29.94,0,0,0,42.4,0l15.3-15.3c41,56.9,98.3,123,144.6,170.4,3.4,3.5,6.8,6.9,10.1,10.2q18.45,18.45,37.7,35.9c19.3,17.5,39.2,34.2,59.5,50,18.5,14.4,37.4,28,56.5,40.8,8.8,5.9,17.6,11.6,26.6,17.1a961.27,961.27,0,0,0,187.4,89.7L853,803.7l-3.1,3.1a30,30,0,0,0,0,42.4l12.9,12.9a29.94,29.94,0,0,0,42.4,0l52.1-52.1a30,30,0,0,0,0-42.4ZM543.88,502.8c-1.4-.9-2.9-1.8-4.3-2.7q-28.8-18.15-56.5-38.7a957.83,957.83,0,0,1-79.4-65.8c-9.6-8.9-19.1-18-28.4-27.3-5.9-5.9-12-12.2-18.4-18.8-44.6-46.7-99.1-110.3-135.6-162.4l61.1-61.1c49.2,34.5,108.8,85.1,154.6,128.2,9.6,9,18.5,17.7,26.6,25.8,6.6,6.6,13.1,13.3,19.5,20a959.1,959.1,0,0,1,79.4,95.5q18.9,26.1,35.7,53.1l.9,1.5a894.59,894.59,0,0,1,58.8,112.4A887.64,887.64,0,0,1,543.88,502.8Z"/></svg>');
+}
+
+main.service h2 {
+	font-size: 4.37vw;
+	line-height: 5.62vw;
+	font-family: lato black;
+    color: rgb(0, 145, 162);
+    margin-top: 0;
+    margin-bottom: 5.63vw;
+}
+
+.stages {
+	margin-bottom: 9.375vw;
+}
+
+.stages .owl-item {
+	height: 69.07vw;
+	position: relative;
+}
+
+.stages img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: -1;
+	transform: translate(-50%, -50%);
+}
+
+.stages span,
+.stages b,
+.stages p {
+	text-align: right;
+	text-shadow: 0 0 2vw rgb(0, 0, 0);
+}
+
+.stages span {
+	font-size: 4.37vw;
+	font-family: lato black;
+    color: rgb(246, 234, 153);
+    margin-top: 7.82vw;
+    position: relative;
+}
+
+.stages span::after {
+	content: '';
+	display: block;
+	width: 7.5vw;
+    height: 1.25vw;
+    background-color: rgb(246, 234, 153);
+    position: absolute;
+    right: 0;
+    bottom: -3.75vw;
+}
+
+.stages b {
+	font-size: 4.37vw;
+	font-family: lato black;
+	color: rgb(255, 255, 255);
+	margin-top: 14vw;
+	margin-bottom: 11.57vw;
+}
+
+.stages p {
+	font-size: 3.75vw;
+	line-height: 5.62vw;
+	font-family: lato regular;
+	color: rgb(255, 255, 255);
+}
+
+.stages .owl-nav {
+	position: absolute;
+	right: 6.25vw;
+	transform: translateY(-50%);
+}
+
+.stages .owl-nav * {
+	float: left;
+	width: 10.94vw;
+	font-size: 9vw;
+	line-height: 10.94vw;
+	font-family: lato regular;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 172, 193);
+}
+
+.stages .owl-nav *.disabled {
+	color: rgb(0, 172, 193);
+	background-color: rgb(227, 227, 227);
+}
+
+main.service .salons .salon p:first-of-type {
+	font-weight: 700;
+}
+
+.salon > a {
+	font-size: 3.75vw;
+    line-height: 12.5vw;
+    font-family: lato regular;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 162, 72);
+    display: block;
+    width: 49.375vw;
+    margin-top: 6vw;
+    margin-right: auto;
+    margin-bottom: 6vw;
+    margin-left: auto;
+}
+
+.photos {
+	margin-bottom: 5.63vw;
+}
+
+.photos img {
+	width: auto !important;
+	height: 28vw;
 }
