@@ -225,12 +225,12 @@ div.menu {
 }
 
 .menu ul ul {
-	width: 71.25vw;
+	width: 71.55vw;
 	height: 118.359vw;
 	background-color: rgb(0, 145, 162);
 	position: absolute;
-	top: 11.4vw;
-	left: 9.375vw;
+	top: 11.2vw;
+	left: 9.35vw;
 	overflow-y: auto;
 	transform: translateX(-114%);
 	transition-duration: .4s;
@@ -678,6 +678,7 @@ div.modal {
 	top: 0;
 	left: 0;
 	z-index: 1;
+	overflow-y: auto;
 	background-color: rgb(255, 255, 255);
 	padding-top: 20vw;
 	padding-bottom: 10vw;

@@ -25,8 +25,10 @@ document.querySelector('.menu ul ul button').addEventListener('click', function(
 
 
 
-document.querySelector('button.modal').addEventListener('click', function(event) {	// MODAL
-	document.body.classList.add('modal');
+document.querySelectorAll('button.modal').forEach(function(item) {
+	item.addEventListener('click', function(event) {
+		document.body.classList.add('modal');
+	});
 });
 
 document.querySelector('.modal .close').addEventListener('click', function() {
