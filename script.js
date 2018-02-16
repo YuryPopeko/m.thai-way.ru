@@ -44,7 +44,7 @@ document.addEventListener('keydown', function(event) {
 
 
 
-function initMap() {
+function initMap() {																// MAP
 	var par = {lat: 59.843041, lng: 30.3200435},
 		isspa = {lat: 59.842766, lng: 30.3162032},
 		luxury = {lat: 59.9671712, lng: 30.2711788};
