@@ -3,15 +3,18 @@ document.querySelector('button.menu').addEventListener('click', function() {		//
 });
 
 document.querySelector('.menu .close').addEventListener('click', function() {
-	document.body.classList.remove('menu');
+	closeMenu();
 });
 
 document.querySelector('div.dark').addEventListener('click', function() {
-	document.body.classList.remove('menu');
+	closeMenu();
 });
 
+const servicesList = document.querySelector('.menu ul ul');
+
 document.addEventListener('keydown', function(event) {
-	if (event.keyCode === 27) document.body.classList.remove('menu');
+	if (event.keyCode === 27)
+		closeMenu();
 });
 
 document.querySelector('.menu > ul > li > button').addEventListener('click', function() {
@@ -22,13 +25,18 @@ document.querySelector('.menu ul ul button').addEventListener('click', function(
 	document.querySelector('.menu ul ul').classList.remove('open');
 });
 
+function closeMenu() {
+	document.body.classList.remove('menu');
+	if (servicesList.classList.contains('open'))
+		servicesList.classList.remove('open');
+}
 
 
 
-document.querySelectorAll('button.modal').forEach(function(item) {
-	item.addEventListener('click', function(event) {
+
+document.querySelector('section.contacts').addEventListener('click', function(event) {
+	if (event.target.classList.contains('modal'))
 		document.body.classList.add('modal');
-	});
 });
 
 document.querySelector('.modal .close').addEventListener('click', function() {
