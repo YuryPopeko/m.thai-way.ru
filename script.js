@@ -96,3 +96,21 @@ function initMap() {																// MAP
 		});
 	});
 }
+
+
+
+
+
+if (document.location.href.indexOf('service') > 0) {
+	document.querySelector('.salons').addEventListener('click', function(event) {
+		if (event.target.innerHTML === '360') {
+			const tourContainer = event.target.parentElement;
+			tourContainer.classList.add('open');
+			const close = document.querySelector('.tour.open .close');
+
+			close.addEventListener('click', function() {
+		        tourContainer.classList.remove('open');
+		    });
+		}
+	});
+}
