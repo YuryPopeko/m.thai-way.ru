@@ -999,7 +999,13 @@ main.service .salons .salon p:first-of-type {
 }
 
 .photos {
+	height: 27.996875vw;
 	margin-bottom: 5.63vw;
+	overflow: hidden;
+}
+
+.photos .owl-item {
+	width: 33.33vw;
 }
 
 .photos img {
