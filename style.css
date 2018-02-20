@@ -617,6 +617,7 @@ div.salon {
 	margin-bottom: 0;
 	font-size: 4.375vw;
 	line-height: 9.375vw;
+	color: rgb(255, 255, 255) !important;
 	font-family: lato black;
 	text-transform: uppercase;
 }
