@@ -612,12 +612,12 @@ div.salon {
 	border-color: rgb(255, 255, 255) transparent transparent transparent;
 }
 
-.consultation h2 {
+div.consultation h2 {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 4.375vw;
 	line-height: 9.375vw;
-	color: rgb(255, 255, 255) !important;
+	color: rgb(255, 255, 255);
 	font-family: lato black;
 	text-transform: uppercase;
 }
@@ -1224,4 +1224,15 @@ main.service .salons .salon p:first-of-type {
 
 main.gallery a img {
 	width: 100%;
+}
+
+.gallery > a {
+	display: none;
+}
+
+.gallery.par > a.par,
+.gallery.isspa > a.isspa,
+.gallery.luxury > a.luxury,
+.gallery.all > a {
+	display: block;
 }

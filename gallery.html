@@ -52,7 +52,7 @@
 			</ul>
 		</div>
 	</header>
-	<main class="gallery">
+	<main class="gallery all">
 		<div class="head">
 			<img src="img/service.jpg">
 			<h1>Галерея</h1>
@@ -64,16 +64,22 @@
     	</div>
     	<div class="wrapper">
     		<select size="1">
-    			<option id="par">Пар для пар</option>
-				<option id="isspa">Ирония судьбы</option>
-				<option id="luxury">Luxury</option>
-				<option id="all" selected>Все салоны</option>
+    			<option value="par">Пар для пар</option>
+				<option value="isspa">Ирония судьбы</option>
+				<option value="luxury">Luxury</option>
+				<option value="all" selected>Все салоны</option>
 			</select>
     	</div>
-    	<a href="img/procedure1.jpg" data-fancybox="par"><img src="img/procedure1.jpg"></a>
-    	<a href="img/procedure2.jpg" data-fancybox="par"><img src="img/procedure2.jpg"></a>
-    	<a href="img/procedure3.jpg" data-fancybox="par"><img src="img/procedure3.jpg"></a>
-    	<a href="img/procedure2.jpg" data-fancybox="par"><img src="img/procedure2.jpg"></a>
+    	<a href="img/procedure1.jpg" class="par" data-fancybox="gallery"><img src="img/procedure1.jpg"></a>
+    	<a href="img/procedure2.jpg" class="par" data-fancybox="gallery"><img src="img/procedure2.jpg"></a>
+    	<a href="img/procedure3.jpg" class="par" data-fancybox="gallery"><img src="img/procedure3.jpg"></a>
+    	<a href="img/aquazone.jpg" class="isspa" data-fancybox="gallery"><img src="img/aquazone.jpg"></a>
+    	<a href="img/bath-rituals.jpg" class="isspa" data-fancybox="gallery"><img src="img/bath-rituals.jpg"></a>
+    	<a href="img/fitness.jpg" class="isspa" data-fancybox="gallery"><img src="img/fitness.jpg"></a>
+    	<a href="img/spa-procedures.jpg" class="luxury" data-fancybox="gallery"><img src="img/spa-procedures.jpg"></a>
+    	<a href="img/service.jpg" class="luxury" data-fancybox="gallery"><img src="img/service.jpg"></a>
+    	<a href="img/restaurant.jpg" class="luxury" data-fancybox="gallery"><img src="img/restaurant.jpg"></a>
+    	<hr>
 		<section class="salons">
 			<span class="wrapper">Выбрать салон:</span>
 			<input type="radio" name="salon" id="par" hidden checked>
@@ -85,7 +91,7 @@
 				<li><label for="luxury">Luxury</label></li>
 			</ul>
 			<div class="salon par">
-				<p class="wrapper">г. Санкт-Петербург ул 1-ая Никитинская 13 <br>(в навигаторе ставить 16)</p>
+				<p class="wrapper">г.&nbspСанкт-Петербург,&nbspул.&nbsp1-ая&nbspНикитинская&nbsp13<br>(в навигаторе ставить 16)</p>
 				<div class="consultation">
 					<h2 class="wrapper">Получите консультацию:</h2>
 					<a class="wrapper" href="tel:+7(981)982-00-00">+7 8(981) 982-00-00</a>
@@ -99,7 +105,7 @@
 				</div>
 			</div>
 			<div class="salon isspa">
-				<p class="wrapper">г. Санкт-Петербург Площадь Победы 1 Отель "Park Inn Pulkovskaya"</p>
+				<p class="wrapper">г. Санкт-Петербург, пл. Победы 1 Отель "Park Inn Pulkovskaya"</p>
 				<div class="consultation">
 					<h2 class="wrapper">Получите консультацию:</h2>
 					<a class="wrapper" href="tel:+7(812)740-39-75">+7 8(812) 740-39-75</a>
@@ -113,7 +119,7 @@
 				</div>
 			</div>
 			<div class="salon luxury">
-				<p class="wrapper">г. Санкт-Петербург ул. Вязовая 10</p>
+				<p class="wrapper">г. Санкт-Петербург, ул. Вязовая 10</p>
 				<div class="consultation">
 					<h2 class="wrapper">Получите консультацию:</h2>
 					<a class="wrapper" href="tel:+7(812)240-06-40">+7 (812) 240-06-40</a>
@@ -148,7 +154,7 @@
 	<script src="script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-	<script>$("[data-fancybox]").fancybox({gutter:0,buttons:['close']})</script>
+	<script src="owl.carousel.min.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjnmERzX0E7ZyAByUCTvpAGTwfmfTLXzQ&callback=initMap"></script>
 </body>
 </html>

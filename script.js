@@ -119,7 +119,9 @@ if (document.location.href.indexOf('service') > 0) {
 
 
 if (document.location.href.indexOf('gallery') > 0) {
+	const gallery = document.querySelector('main.gallery');
 	document.querySelector('select').addEventListener('change', function(event) {
-		console.log(event.target)
+		gallery.className = 'gallery';
+		gallery.classList.add(event.target.value);
 	});
 }
