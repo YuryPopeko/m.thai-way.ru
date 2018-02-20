@@ -6,6 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css"/>
 </head>
 <body>
 	<header>
@@ -36,9 +37,9 @@
 						<li><button>Назад</button></li>
 					</ul>
 				</li>
-				<li><a href="">Подарочные сертификаты</a></li>
+				<li><a href="certificates.html">Подарочные сертификаты</a></li>
 				<li><a href="">Корпоративы</a></li>
-				<li><a href="stock.html">Акции</a></li>
+				<li><a href="stocks.html">Акции</a></li>
 				<li><a href="">SPA-бизнес</a></li>
 				<li><a href="">Контакты</a></li>
 			</ul>
@@ -62,14 +63,17 @@
 			</div>
     	</div>
     	<div class="wrapper">
-    		<select size="1" onchange="selectItem(this)">
+    		<select size="1">
     			<option id="par">Пар для пар</option>
-				<option selected="" id="isspa">Ирония судьбы</option>
+				<option id="isspa">Ирония судьбы</option>
 				<option id="luxury">Luxury</option>
-				<option id="all">Все салоны</option>
+				<option id="all" selected>Все салоны</option>
 			</select>
     	</div>
-    	<section></section>
+    	<a href="img/procedure1.jpg" data-fancybox="par"><img src="img/procedure1.jpg"></a>
+    	<a href="img/procedure2.jpg" data-fancybox="par"><img src="img/procedure2.jpg"></a>
+    	<a href="img/procedure3.jpg" data-fancybox="par"><img src="img/procedure3.jpg"></a>
+    	<a href="img/procedure2.jpg" data-fancybox="par"><img src="img/procedure2.jpg"></a>
 		<section class="salons">
 			<span class="wrapper">Выбрать салон:</span>
 			<input type="radio" name="salon" id="par" hidden checked>
@@ -83,7 +87,7 @@
 			<div class="salon par">
 				<p class="wrapper">г. Санкт-Петербург ул 1-ая Никитинская 13 <br>(в навигаторе ставить 16)</p>
 				<div class="consultation">
-					<h3 class="wrapper">Получите консультацию:</h3>
+					<h2 class="wrapper">Получите консультацию:</h2>
 					<a class="wrapper" href="tel:+7(981)982-00-00">+7 8(981) 982-00-00</a>
 					<span class="wrapper" >С 11:00 до последнего клиента</span>
 					<button class="modal">Заказать звонок</button>
@@ -97,7 +101,7 @@
 			<div class="salon isspa">
 				<p class="wrapper">г. Санкт-Петербург Площадь Победы 1 Отель "Park Inn Pulkovskaya"</p>
 				<div class="consultation">
-					<h3 class="wrapper">Получите консультацию:</h3>
+					<h2 class="wrapper">Получите консультацию:</h2>
 					<a class="wrapper" href="tel:+7(812)740-39-75">+7 8(812) 740-39-75</a>
 					<span class="wrapper" >Работаем с 11:00 до 23:00</span>
 					<button class="modal">Заказать звонок</button>
@@ -111,7 +115,7 @@
 			<div class="salon luxury">
 				<p class="wrapper">г. Санкт-Петербург ул. Вязовая 10</p>
 				<div class="consultation">
-					<h3 class="wrapper">Получите консультацию:</h3>
+					<h2 class="wrapper">Получите консультацию:</h2>
 					<a class="wrapper" href="tel:+7(812)240-06-40">+7 (812) 240-06-40</a>
 					<span class="wrapper" >Работаем круглосуточно</span>
 					<button class="modal">Заказать звонок</button>
@@ -142,6 +146,9 @@
 	</div>
 	<div class="dark"></div>
 	<script src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+	<script>$("[data-fancybox]").fancybox({gutter:0,buttons:['close']})</script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjnmERzX0E7ZyAByUCTvpAGTwfmfTLXzQ&callback=initMap"></script>
 </body>
 </html>

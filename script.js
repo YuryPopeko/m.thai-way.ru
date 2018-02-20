@@ -118,22 +118,8 @@ if (document.location.href.indexOf('service') > 0) {
 
 
 
-function selectItem(src) {
-        const title = [
-            'rituals',
-			'massage',
-			'spa',
-			'fitness',
-			'aquazone',
-			'dryaquamassage',
-			'beerbarrels',
-			'saltcave',
-		];
-    
-    let sections = document.querySelectorAll('.gallery');
-    if(!sections.length) sections = document.querySelectorAll('.services.wrapper');
-    for(let i = 0; i < sections.length; i++) {
-        sections[i].style.display = 'none';
-    }
-    document.getElementsByClassName(title[src.selectedIndex])[0].style.display = 'block';
+if (document.location.href.indexOf('gallery') > 0) {
+	document.querySelector('select').addEventListener('change', function(event) {
+		console.log(event.target)
+	});
 }
