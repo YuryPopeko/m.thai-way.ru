@@ -34,22 +34,24 @@ function closeMenu() {
 
 
 
-document.querySelector('section.salons').addEventListener('click', function(event) {
-	if (event.target.classList.contains('modal'))
-		document.body.classList.add('modal');
-});
+if (document.querySelector('section.salons')) {
+	document.querySelector('section.salons').addEventListener('click', function(event) {
+		if (event.target.classList.contains('modal'))
+			document.body.classList.add('modal');
+		});
 
-document.querySelector('.modal .close').addEventListener('click', function() {
-	document.body.classList.remove('modal');
-});
+		document.querySelector('.modal .close').addEventListener('click', function() {
+			document.body.classList.remove('modal');
+		});
 
-document.querySelector('div.dark').addEventListener('click', function() {
-	document.body.classList.remove('modal');
-});
+		document.querySelector('div.dark').addEventListener('click', function() {
+			document.body.classList.remove('modal');
+		});
 
-document.addEventListener('keydown', function(event) {
-	document.body.classList.remove('modal');
-});
+		document.addEventListener('keydown', function(event) {
+			document.body.classList.remove('modal');
+		});
+}
 
 
 
@@ -119,9 +121,10 @@ if (document.location.href.indexOf('service') > 0) {
 
 
 if (document.location.href.indexOf('gallery') > 0) {
-	const gallery = document.querySelector('main.gallery');
+	const gallery = document.querySelector('main.gallery'),
+		  images = document.querySelectorAll('main.gallery > a');
 	document.querySelector('select').addEventListener('change', function(event) {
-		gallery.className = 'gallery';
+		gallery.className = 'gallery clearfix';
 		gallery.classList.add(event.target.value);
 	});
 }

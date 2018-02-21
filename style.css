@@ -668,6 +668,7 @@ ul.social a {
 	display: block;
 	width: 12.5vw;
 	height: 12.5vw;
+	background-size: contain;
 }
 
 a.fb {
