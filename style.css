@@ -612,16 +612,6 @@ div.salon {
 	border-color: rgb(255, 255, 255) transparent transparent transparent;
 }
 
-div.consultation h2 {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 4.375vw;
-	line-height: 9.375vw;
-	color: rgb(255, 255, 255);
-	font-family: lato black;
-	text-transform: uppercase;
-}
-
 .consultation a {
 	font-size: 4.375vw;
 	line-height: 9.375vw;
@@ -901,6 +891,16 @@ main.service h2 {
     margin-bottom: 5.63vw;
 }
 
+div.consultation h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 4.375vw;
+	line-height: 9.375vw;
+	color: rgb(255, 255, 255);
+	font-family: lato black;
+	text-transform: uppercase;
+}
+
 .stages {
 	margin-bottom: 9.375vw;
 }
@@ -1170,7 +1170,16 @@ main.service .salons .salon p:first-of-type {
     background-color: rgb(246, 234, 153);
 }
 
-.gallery select {
+.select-header {
+	display: inline-block;
+	margin-top: 6vw;
+	font-size: 4.37vw;
+	line-height: 5.62vw;
+	font-family: lato black;
+	color: rgb(0, 145, 162);
+}
+
+select {
 	width: 100%;
     margin-top: 6.25vw;
     margin-bottom: 6.25vw;
@@ -1223,17 +1232,55 @@ main.service .salons .salon p:first-of-type {
     font-family: rubl;
 }
 
+.rubl::after {
+	content: '\2004''a';
+    font-family: rubl;
+}
+
 main.gallery a img {
 	width: 100%;
 }
 
-.gallery > a {
+main[data-content] > div.wrapper ~ * {
 	display: none;
 }
 
-.gallery.par > a.par,
-.gallery.isspa > a.isspa,
-.gallery.luxury > a.luxury,
-.gallery.all > a {
+main[data-content=par] > div.wrapper ~ .par,
+main[data-content=isspa] > div.wrapper ~ .isspa,
+main[data-content=luxury] > div.wrapper ~ .luxury,
+main[data-content=all] > div.wrapper ~ * {
 	display: block;
+}
+
+.menu-services > ul {
+	font-family: Lato Regular;
+	font-size: 4.06vw;
+	line-height: 6.25vw;
+}
+
+.menu-services > ul + ul {
+	border-top: 0.3vw solid rgb(229, 229, 229);
+}
+
+.menu-services ul p {
+	font-family: Lato Regular;
+	font-size: 4.06vw;
+	line-height: 6.25vw;
+    color: rgb(86, 86, 86);
+    margin-top: 9.375vw;
+    margin-bottom: 8vw;
+}
+
+.menu-services ul ul li::before {
+	content: "■";
+	display: inline-block;
+    font-size: 3vw;
+    color: rgb(86, 86, 86);
+    margin-right: 2.5vw;
+    transform: translateY(-.5vw);
+}
+
+.menu-services .rubl {
+	font-size: 4.37vw;
+	color: rgb(0, 172, 193);
 }

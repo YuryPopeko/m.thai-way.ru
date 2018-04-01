@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Галерея | Thai Way</title>
+	<title>Меню услуг | Thai Way</title>
 	<meta charset="utf-8">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width">
@@ -53,34 +53,48 @@
 			</ul>
 		</div>
 	</header>
-	<main class="gallery clearfix" data-content="isspa">
-		<div class="head">
-			<img src="img/service.jpg">
-			<h1>Галерея</h1>
-		</div>
+	<main class="menu-services clearfix" data-content="all">
 		<div class="breadcrumbs">
 			<div class="wrapper">
-				<a href="index.html">Главная</a> / Галерея
+				<a href="index.html">Главная</a> / Меню услуг
 			</div>
     	</div>
     	<div class="wrapper">
     		<span class="select-header">Выберите салон</span>
     		<select class="toggle-content" size="1">
     			<option value="par">Пар для пар</option>
-				<option value="isspa" selected>Ирония судьбы</option>
+				<option value="isspa">Ирония судьбы</option>
 				<option value="luxury">Luxury</option>
-				<option value="all">Все салоны</option>
+				<option value="all" selected>Все салоны</option>
 			</select>
     	</div>
-    	<a href="img/procedure1.jpg" class="par" data-fancybox="gallery"><img src="img/procedure1.jpg"></a>
-    	<a href="img/procedure2.jpg" class="par" data-fancybox="gallery"><img src="img/procedure2.jpg"></a>
-    	<a href="img/procedure3.jpg" class="par" data-fancybox="gallery"><img src="img/procedure3.jpg"></a>
-    	<a href="img/aquazone.jpg" class="isspa" data-fancybox="gallery"><img src="img/aquazone.jpg"></a>
-    	<a href="img/bath-rituals.jpg" class="isspa" data-fancybox="gallery"><img src="img/bath-rituals.jpg"></a>
-    	<a href="img/fitness.jpg" class="isspa" data-fancybox="gallery"><img src="img/fitness.jpg"></a>
-    	<a href="img/spa-procedures.jpg" class="luxury" data-fancybox="gallery"><img src="img/spa-procedures.jpg"></a>
-    	<a href="img/service.jpg" class="luxury" data-fancybox="gallery"><img src="img/service.jpg"></a>
-    	<a href="img/restaurant.jpg" class="luxury" data-fancybox="gallery"><img src="img/restaurant.jpg"></a>
+    	<ul class="wrapper par">
+			<li>
+				<p>Пропарка в Паре</p>
+				<ul>
+				    <li>20&nbsp;мин – <span class="rubl">2500</span></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="wrapper isspa">
+			<li>
+				<p>Пропарка в Иронии</p>
+				<ul>
+				    <li>30&nbsp;мин – <span class="rubl">2500</span></li>
+				    <li>50&nbsp;мин – <span class="rubl">5000</span></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="wrapper luxury">
+			<li>
+				<p>Пропарка в Люксе</p>
+				<ul>
+				    <li>40&nbsp;мин – <span class="rubl">2500</span></li>
+				    <li>30&nbsp;мин – <span class="rubl">2500</span></li>
+				    <li>30&nbsp;мин – <span class="rubl">25000</span></li>
+				</ul>
+			</li>
+		</ul>
 	</main>
 	<footer>
 		<a class="wrapper" href="">Пользовательское соглашение</a>
