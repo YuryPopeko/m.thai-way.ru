@@ -32,14 +32,18 @@ function closeMenu() {
 
 
 
-const callRequest = document.querySelector('section.salons button.modal');				// ЗАКАЗАТЬ ЗВОНОК
+const callRequest = document.querySelectorAll('section.salons button.modal');				// ЗАКАЗАТЬ ЗВОНОК
 if (callRequest) {
-	callRequest.addEventListener('click', function(event) {
-		document.body.classList.add('modal');
+	callRequest.forEach(function(i) {
+		i.addEventListener('click', function(event) {
+			document.body.classList.add('modal');
+		})
 	});
 
-	document.querySelector('.modal .close').addEventListener('click', function() {
-		document.body.classList.remove('modal');
+	document.querySelectorAll('.modal .close').forEach(function(i) {
+		i.addEventListener('click', function() {
+			document.body.classList.remove('modal');
+		})
 	});
 
 	document.querySelector('div.dark').addEventListener('click', function() {
@@ -47,7 +51,7 @@ if (callRequest) {
 	});
 
 	document.addEventListener('keydown', function(event) {
-		document.body.classList.remove('modal');
+		if (event.keyCode === 27) document.body.classList.remove('modal');
 	});
 }
 
@@ -87,14 +91,17 @@ function initMap() {																// MAP
 		});
 	});
 
-	document.getElementById('luxury').addEventListener('change', function() {
-		if (this.checked) map.setCenter(luxury);
-		marker.setMap(null);
-		marker = new google.maps.Marker({
-			position: luxury,
-			map: map,
+	const luxuryTab = document.getElementById('luxury');
+	if (luxuryTab) {
+		luxuryTab.addEventListener('change', function() {
+			if (this.checked) map.setCenter(luxury);
+			marker.setMap(null);
+			marker = new google.maps.Marker({
+				position: luxury,
+				map: map,
+			});
 		});
-	});
+	}
 }
 
 
