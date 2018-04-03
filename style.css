@@ -52,6 +52,7 @@ body {
 	margin-right: 0;
 	margin-bottom: 0;
 	margin-left: 0;
+	font-family: lato regular;
 }
 
 body.menu,
@@ -191,13 +192,13 @@ header .menu ul:first-of-type li:last-child {
 .menu li button {
 	font-size: 3.75vw;
 	line-height: 16.5vw;
-	font-family: lato regular;
 	text-transform: uppercase;
 	color: rgb(230, 230, 230);
 }
 
 .menu li a {
 	text-decoration: none;
+	display: block;
 }
 
 .menu li button {
@@ -247,14 +248,13 @@ header .menu ul:first-of-type li:last-child {
 	text-align: center;
 	font-size: 3.75vw;
 	line-height: 12.5vw;
-	font-family: lato regular;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: rgb(246, 234, 153);
 	border: 0.5vw solid rgb(246, 234, 153);
 }
 
-.menu hr {
+.menu > hr {
     background-color: rgb(50, 160, 173);
     border: none;
     width: 14vw;
@@ -374,7 +374,6 @@ main.main ul.tabs {
 .tabs li {
 	float: left;
 	text-align: center;
-	font-family: lato regular;
 }
 
 main.main .tabs li {
@@ -479,7 +478,6 @@ div.description {
 	margin-left: 15.625vw;
 	font-size: 3.75vw;
 	line-height: 5.625vw;
-	font-family: lato regular;
 }
 
 main.main .service {
@@ -533,7 +531,6 @@ main.corporate h2 {
 .salons span {
 	font-size: 5vw;
 	line-height: 6.25vw;
-	font-family: lato regular;
 }
 
 .salon li {
@@ -626,13 +623,11 @@ div.salon {
 .consultation span {
 	font-size: 4.375vw;
 	line-height: 9.375vw;
-	font-family: lato regular;
 }
 
 .consultation button {
 	font-size: 3.75vw;
 	line-height: 16.25vw;
-	font-family: lato regular;
 	text-transform: uppercase;
 	color: rgb(0, 162, 72);
  	background-color: rgb(255, 255, 255);
@@ -713,14 +708,12 @@ div.modal input[type=tel] {
     border: .3vw solid rgb(207, 207, 207);
     font-size: 4.37vw;
     line-height: 10vw;
-    font-family: lato regular;
     background-color: rgb(246, 246, 246);
 }
 
 div.modal p {
 	font-size: 3.75vw;
 	line-height: 6.25vw;
-	font-family: lato regular;
 	color: rgb(86, 86, 86);
     text-align: center;
 }
@@ -749,7 +742,6 @@ div.modal a {
     color: rgb(174, 174, 174);
     font-size: 3.75vw;
     line-height: 6.25vw;
-    font-family: lato regular;
 }
 
 footer {
@@ -760,7 +752,6 @@ footer {
 
 footer a {
 	font-size: 4.375vw;
-	font-family: lato regular;
 	color: rgb(255, 255, 255);
 }
 
@@ -794,7 +785,6 @@ footer a {
     background-color: rgb(246, 246, 246);
     font-size: 3.75vw;
     line-height: 12.5vw;
-    font-family: lato regular;
 }
 
 .breadcrumbs .wrapper * {
@@ -861,7 +851,6 @@ footer a {
 
 .effect span {
 	font-size: 3.75vw;
-	font-family: lato regular;
 }
 
 .positive.effect li:first-child div {
@@ -961,7 +950,6 @@ div.consultation h2 {
 .stages p {
 	font-size: 3.75vw;
 	line-height: 5.62vw;
-	font-family: lato regular;
 	color: rgb(255, 255, 255);
 }
 
@@ -1010,7 +998,6 @@ main.service .salons .salon p:first-of-type {
 .corporate .request button {
 	font-size: 3.75vw;
     line-height: 12.5vw;
-    font-family: lato regular;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
@@ -1128,7 +1115,6 @@ main.service .salons .salon p:first-of-type {
     text-align: center;
     font-size: 3.75vw;
     line-height: 33.44vw;
-    font-family: lato regular;
     color: rgb(255, 255, 255);
     text-shadow: 0 .625vw 1.57vw rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 25vw 0 rgb(0, 0, 0);
@@ -1170,7 +1156,6 @@ main.service .salons .salon p:first-of-type {
 .stock > p {
 	font-size: 3.75vw;
 	line-height: 5.62vw;
-	font-family: lato regular;
 }
 
 .stock a {
@@ -1221,7 +1206,6 @@ select {
     border: .3vw solid rgb(207, 207, 207);
     font-size: 4.37vw;
     line-height: 6.25vw;
-    font-family: lato regular;
     background: rgb(246, 246, 246);
 }
 
@@ -1242,7 +1226,6 @@ select {
 .salon .certificate p {
 	font-size: 3.75vw;
 	line-height: 5.62vw;
-	font-family: lato regular;
 	color: rgb(86, 86, 86);
 }
 
@@ -1252,7 +1235,6 @@ select {
 	float: left;
     font-size: 4.375vw;
     line-height: 15.625vw;
-    font-family: lato regular;
     color: rgb(255, 255, 255);
     background: rgb(0, 172, 193);
     border: 0;
@@ -1284,7 +1266,6 @@ main[data-content=all] > div.wrapper ~ * {
 }
 
 .menu-services > ul {
-	font-family: Lato Regular;
 	font-size: 4.06vw;
 	line-height: 6.25vw;
 }
@@ -1294,7 +1275,6 @@ main[data-content=all] > div.wrapper ~ * {
 }
 
 .menu-services ul p {
-	font-family: Lato Regular;
 	font-size: 4.06vw;
 	line-height: 6.25vw;
     color: rgb(86, 86, 86);
@@ -1320,7 +1300,6 @@ main[data-content=all] > div.wrapper ~ * {
 	text-align: center;
 	font-size: 3.75vw;
 	line-height: 6.25vw;
-    font-family: Lato Regular;
     color: rgb(141, 141, 141);
 }
 
@@ -1379,7 +1358,6 @@ main[data-content=all] > div.wrapper ~ * {
 .program .item p {
 	font-size: 3.75vw;
 	line-height: 5.625vw;
-	font-family: Lato Regular;
 	color: rgb(141, 141, 141);
 }
 
@@ -1441,6 +1419,20 @@ main.corporate .price-list h2 {
 .corporate .request p {
 	font-size: 4.375vw;
 	line-height: 5.625vw;
-	font-family: Lato Regular;
 	color: rgb(141, 141, 141);
 }
+
+.service .stock {
+	background-color: rgb(0, 172, 193);
+	padding-top: 9vw;
+	padding-bottom: 9vw;
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+
+.service .stock span {
+	text-transform: uppercase;
+	font-family: lato bold;
+	margin-bottom: 3vw;
+}
+

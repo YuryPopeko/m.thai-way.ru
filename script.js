@@ -108,15 +108,17 @@ function initMap() {																// MAP
 
 
 
-const tour = document.querySelector('.tour div');										// 3D-TOUR
-if (tour) {
-	tour.addEventListener('click', function(event) {
-		const tourContainer = event.target.parentElement;
-		tourContainer.classList.add('open');
-		const close = document.querySelector('.tour.open .close');
-		close.addEventListener('click', function() {
-	        tourContainer.classList.remove('open');
-	    });
+const tours = document.querySelectorAll('.tour div');										// 3D-TOUR
+if (tours) {
+	tours.forEach(function(i) {
+		i.addEventListener('click', function(event) {
+			const tourContainer = event.target.parentElement;
+			tourContainer.classList.add('open');
+			const close = document.querySelector('.tour.open .close');
+			close.addEventListener('click', function() {
+		        tourContainer.classList.remove('open');
+		    });
+		})
 	});
 }
 
